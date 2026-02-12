@@ -1,0 +1,46 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_zoom_videosdk (0.0.1):
+    - Flutter
+    - ZoomVideoSDK/CptShare (= 2.4.12)
+    - ZoomVideoSDK/Whiteboard (= 2.4.12)
+    - ZoomVideoSDK/zm_annoter_dynamic (= 2.4.12)
+    - ZoomVideoSDK/zoomcml (= 2.4.12)
+    - ZoomVideoSDK/ZoomTask (= 2.4.12)
+    - ZoomVideoSDK/ZoomVideoSDK (= 2.4.12)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - ZoomVideoSDK/CptShare (2.4.12)
+  - ZoomVideoSDK/Whiteboard (2.4.12)
+  - ZoomVideoSDK/zm_annoter_dynamic (2.4.12)
+  - ZoomVideoSDK/zoomcml (2.4.12)
+  - ZoomVideoSDK/ZoomTask (2.4.12)
+  - ZoomVideoSDK/ZoomVideoSDK (2.4.12)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_zoom_videosdk (from `.symlinks/plugins/flutter_zoom_videosdk/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+
+SPEC REPOS:
+  trunk:
+    - ZoomVideoSDK
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_zoom_videosdk:
+    :path: ".symlinks/plugins/flutter_zoom_videosdk/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+
+SPEC CHECKSUMS:
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  flutter_zoom_videosdk: 01c42286d909714265bc5152fefc653b0c466575
+  path_provider_foundation: 0b743cbb62d8e47eab856f09262bb8c1ddcfe6ba
+  ZoomVideoSDK: 87ab0da69ee010d9d26f2fd152ea41d67ac6326d
+
+PODFILE CHECKSUM: fa3c58c56e1dcda976c7c67b92fdf73a26534fe4
+
+COCOAPODS: 1.16.2

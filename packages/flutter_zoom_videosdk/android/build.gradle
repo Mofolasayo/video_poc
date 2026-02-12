@@ -1,0 +1,51 @@
+group 'com.flutterzoom.videosdk'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.2'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    namespace "com.flutterzoom.videosdk"
+    // Needed for v35 resources in transitive dependencies.
+    compileSdkVersion 35
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 28
+    }
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation "androidx.security:security-crypto:1.1.0-alpha06"
+    implementation "com.google.crypto.tink:tink-android:1.8.0"
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    // These are part of the plugin's public API (FlutterZoomVideoSdkPlugin implements ZoomVideoSDKDelegate),
+    // so they must be exposed to the consuming app at compile time.
+    api "us.zoom.videosdk:zoomvideosdk-core:2.4.12"
+    api "us.zoom.videosdk:zoomvideosdk-videoeffects:2.4.12"
+    api "us.zoom.videosdk:zoomvideosdk-annotation:2.4.12"
+    api "us.zoom.videosdk:zoomvideosdk-whiteboard:2.4.12"
+    api "us.zoom.videosdk:zoomvideosdk-broadcast-streaming:2.4.12"
+}
